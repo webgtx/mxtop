@@ -44,3 +44,8 @@ The Top Multiplexer on steroids
 192.168.1.99
 192.168.1.117
 ```
+
+#### How to run this playbooks?
+```bash
+ansible-playbook main.yml -i inventory/hosts
+```
