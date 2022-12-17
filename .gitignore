@@ -1,3 +1,6 @@
+# File variables
+.var/*
+
 # Binaries for programs and plugins
 *.exe
 *.exe~

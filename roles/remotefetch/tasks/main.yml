@@ -1,0 +1,9 @@
+---
+- name: write all release data into a single file
+  shell: cat /etc/*-release > release.info.dat
+
+- name: fetch release data between remotes
+  fetch: 
+    src: ~/release.info.dat
+    dest: ./.var 
+    
