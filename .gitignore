@@ -2,6 +2,7 @@
 .var/*
 
 # Binaries for programs and plugins
+mxtop*
 *.exe
 *.exe~
 *.dll

@@ -7,13 +7,16 @@ VERSION='0.0.1'
 COMMIT_HASH="$(git rev-parse --short HEAD)"
 
 # go build flags
-DEBUG_VAR='ON'
+if [ -z "$DEBUG_VAR" ]; then
+    DEBUG_VAR="OFF"
+else
+    DEBUG_VAR="ON"
+fi
 GO_VARS="\
     -X ${MODULE_NAME}/internal/info.Version=${VERSION} \
     -X ${MODULE_NAME}/internal/info.CommitHash=${COMMIT_HASH} \
     -X ${MODULE_NAME}/internal/info.Debug=${DEBUG_VAR} \
 "
-
 GO_LINKER_FLAGS="\
     -s \
     -w \
