@@ -1,5 +1,6 @@
 # File variables
-.var/*
+ansible/var/*
+*.dat
 
 # Binaries for programs and plugins
 mxtop*
