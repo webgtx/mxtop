@@ -5,7 +5,7 @@
 - name: fetch release data between remotes
   fetch: 
     src: ~/release.info.dat
-    dest: ./.var 
+    dest: ./var 
     
 - name: fetch cpuinfo
   fetch:
