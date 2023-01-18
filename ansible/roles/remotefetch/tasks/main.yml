@@ -7,3 +7,12 @@
     src: ~/release.info.dat
     dest: ./.var 
     
+- name: fetch cpuinfo
+  fetch:
+    src: /proc/cpuinfo
+    dest: ./var
+
+- name: fetch meminfo
+  fetch:
+    src: /proc/meminfo
+    dest: ./var
